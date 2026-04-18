@@ -109,8 +109,19 @@ If valid, a success message appears after a short delay.
 
 ---
 
+## 5. User Navigation and Interaction
 
-## 5. Responsive Design
+The website is designed so users can move easily between the main sections using the navigation bar. Each navigation link scrolls to the related section of the page.
+
+The Projects section supports interaction through category filter buttons. These buttons allow users to control which projects are visible. Each project also includes a Details button that opens a modal with more information.
+
+The Quote section includes a button that allows users to generate a new quote dynamically. The interface provides feedback while the quote is loading and also shows a message if the API request fails.
+
+The Contact section is interactive and guides the user through form submission. Validation messages appear when fields are incomplete or invalid, and a success message is displayed after valid submission.
+
+Additional interactive elements such as the theme toggle and back-to-top button help improve navigation and user experience.
+
+## 6. Responsive Design
 
 The website is responsive and works on different screen sizes.
 
@@ -122,7 +133,7 @@ The layout was tested by resizing the browser and using developer tools.
 
 ---
 
-## 6. Accessibility
+## 7. Accessibility
 
 - Images include alt text  
 - Form inputs have labels  
@@ -131,7 +142,7 @@ The layout was tested by resizing the browser and using developer tools.
 
 ---
 
-## 7. Testing
+## 8. Testing
 
 The project was tested to ensure:
 
@@ -146,7 +157,7 @@ The project was tested to ensure:
 
 ---
 
-## 8. Performance
+## 9. Performance
 
 The website is optimized for performance:
 
@@ -158,7 +169,7 @@ The website is optimized for performance:
 
 ---
 
-## 9. Learning Outcomes
+## 10. Learning Outcomes
 
 Through this project, I learned:
 
@@ -170,6 +181,6 @@ Through this project, I learned:
 
 ---
 
-## 10. Conclusion
+## 11. Conclusion
 
 This project demonstrates clear improvement from previous assignments by adding advanced functionality and improving user interaction. It shows my ability to work with APIs, manage state, and build more complex front-end features, preparing me for more advanced web development projects in the future.

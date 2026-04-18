@@ -79,6 +79,20 @@ The main goals of this project are:
 2. Open index.html using Live Server (recommended) or any modern browser
 3. Make sure you are connected to the internet for the quote API
 
+
+## How to Use the Website
+
+Users can navigate the website using the navigation bar at the top, which links directly to the About, Projects, and Contact sections.
+
+In the Projects section, users can click the filter buttons to display specific project categories. Clicking the "Details" button on a project opens a modal window with more information about that project.
+
+In the Quote section, users can click the "Generate Quote" button to display a new quote fetched from the API. If the quote cannot be loaded, a friendly error message is shown.
+
+In the Contact section, users can fill in their name, email, and message. If any field is invalid, the website displays error messages. If all inputs are valid, a success message appears after submission.
+
+The theme button allows users to switch between light and dark mode, and the website remembers their choice. A back-to-top button also appears while scrolling to help users return to the top of the page easily.
+
+
 ## AI Use (Short Summary)
 AI tools such as ChatGPT were used to:
 
