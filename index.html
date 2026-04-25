@@ -13,7 +13,7 @@
 
   <!-- Navigation bar with section links and theme toggle button -->
   <nav class="nav">
-    <a class="brand" href="#top">My Portfolio</a>
+    <a class="brand" href="#about">My Portfolio</a>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -26,50 +26,52 @@
     </div>
   </nav>
 
-  <!-- About section with greeting, personal introduction, skills, and links -->
+   <!-- About Section -->
   <section id="about" class="section about-modern">
-    <div class="container about-box">
+    <div class="container about-layout">
 
-      <!-- Dynamic greeting text updated by JavaScript -->
-      <div class="top-info">
-        <p id="greeting" class="pill">Hello!</p>
-        <p id="visitTimer" class="pill timer-pill">0 sec</p>
+      <!-- Left side -->
+      <div class="about-left">
+        <div class="top-info">
+          <p id="greeting" class="pill">Hello!</p>
+          <p id="visitTimer" class="pill timer-pill">You have been here for 0 seconds</p>
+        </div>
+
+        <h2>About Me</h2>
+        <h3 class="about-name">Naba Alali</h3>
+
+        <p class="about-text">
+          I am a Software Engineering student passionate about web development and UI/UX design.
+          I enjoy creating responsive applications that are both functional and visually appealing.
+        </p>
+
+        <div class="chips">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Responsive Design</span>
+        </div>
+
+        <div class="about-links">
+          <a href="https://github.com/Naba-Alali" target="_blank" rel="noopener" class="btn small">GitHub</a>
+          <a href="https://linkedin.com/in/naba-alali" target="_blank" rel="noopener" class="btn small">LinkedIn</a>
+        </div>
       </div>
 
-      <h2 class="about-heading">About Me</h2>
-      <h3 class="about-name">Naba Alali</h3>
+      <!-- Right side code card -->
+      <div class="about-right">
+        <div class="code-card">
+          <div class="code-top">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="file-name">about.js</span>
+          </div>
 
-      <!-- Short labels that summarize role/interests -->
-      <div class="about-badges">
-        <span class="about-badge">Software Engineering Student</span>
-        <span class="about-badge">Web Development & UI/UX 💡</span>
-      </div>
-
-      <!-- Main introduction paragraph -->
-      <p class="about-text">
-        I am a Software Engineering student passionate about web development and UI/UX design. I enjoy creating responsive applications that are both functional and visually appealing.
-        I am continuously improving my technical and design skills to build better user experiences.
-      </p>
-
-      <!-- Skills list shown as small badges -->
-      <div class="about-skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Responsive Design</span>
-      </div>
-
-      <!-- Additional profile information -->
-      <div class="about-info">
-        <p>📍 <strong>Location:</strong> Dhahran</p>
-        <p>🎨 <strong>Focus:</strong> Front-end basics</p>
-        <p>💻 <strong>Languages:</strong> HTML • CSS • JS</p>
-      </div>
-
-      <!-- External links to professional profiles -->
-      <div class="about-links">
-        <a href="https://github.com/Naba-Alali" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/naba-alali" target="_blank">LinkedIn</a>
+          <div class="code-body">
+            <pre><code id="codeContent"></code></pre>
+          </div>
+        </div>
       </div>
 
     </div>

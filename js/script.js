@@ -18,8 +18,14 @@ function getGreeting() {
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme) setTheme(savedTheme);
 
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("greeting").textContent = getGreeting();
+const yearEl = document.getElementById("year");
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
+const greetingEl = document.getElementById("greeting");
+if (greetingEl) {
+  greetingEl.textContent = getGreeting();
+}
 
 // Toggle theme when user clicks theme button
 const themeBtn = document.getElementById("themeBtn");
@@ -249,3 +255,28 @@ if (visitTimer) {
     visitTimer.textContent = `You have been here for ${text}`;
   }, 1000);
 }
+
+const codeEl = document.getElementById("codeContent");
+
+const codeText = `const naba = {
+  role: 'Software Engineering Student',
+  university: 'KFUPM',
+  focus: ['Web Development', 'UI/UX'],
+  skills: ['HTML', 'CSS', 'JavaScript'],
+  location: 'Dhahran',
+  goal: 'Build better user experiences'
+};`;
+
+let i = 0;
+
+function typeCode() {
+  if (!codeEl) return;
+
+  if (i < codeText.length) {
+    codeEl.textContent += codeText.charAt(i);
+    i++;
+    setTimeout(typeCode, 20);
+  }
+}
+
+typeCode();
